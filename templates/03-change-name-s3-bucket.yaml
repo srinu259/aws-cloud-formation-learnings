@@ -1,0 +1,8 @@
+# this will be an update with resource deletion
+# note that CF requires S3 bucket to be empty before deletion
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "srinu259-cf-bucket"
